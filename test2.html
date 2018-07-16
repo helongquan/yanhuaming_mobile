@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>某某律师团队</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/mui.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vticker.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="application/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/owl.carousel.min.js"></script>
+    <script src="js/jquery.vticker.js"></script>
+    <!-- <script src="js/layui.js"></script> -->
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="mui-bar mui-bar-nav header">
+        <a href="javascript:void(0);" class="logo">
+            <!-- <img src="./img/logo.jpg"> -->
+            <h2>某某律师团队</h2>
+            <p>专业提供刑事辩护的律师团队</p>
+        </a>
+        <div class="header-tel">
+            <span>您身边的法律专家</span>
+            <a href="tel:4008-158-168">4008-158-168</a>
+        </div>
+    </header>
+    <div class="mui-content">
+
+        <div id="owl-demo" class="owl-carousel">
+            <div class="item">
+                <img src="./img/b7.jpg">
+            </div>
+            <div class="item">
+                <img src="./img/b5.jpg">
+            </div>
+            <div class="item">
+                <img src="./img/b6.jpg">
+            </div>
+        </div>
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items:1,
+                loop:true,
+                singleItem : true,
+                margin:10,
+                autoplay:true,
+                navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                autoplayTimeout:3000,
+                animateOut: 'fadeOut',
+                autoplayHoverPause:true
+            });
+            // $('.play').on('click',function(){
+            //     owl.trigger('play.owl.autoplay',[1000])
+            // })
+            // $('.stop').on('click',function(){
+            //     owl.trigger('stop.owl.autoplay')
+            // })
+        </script>
+
+        <div class="service-field fuwulingyu">
+            <div class="child-title mt20">
+                服务领域
+            </div>
+            <div class="service-field-body four-box">
+                <ul>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c7.png">
+                        <!-- <i class="fa fa-home"></i> -->
+                        <p>律师会见</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c2.png">
+                        <p>取保候审</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c5.png">
+                        <p>不予起诉</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c6.png">
+                        <p>无罪辩护</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c10.png">
+                        <p>减刑缓刑</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c8.png">
+                        <p>上诉改判</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c4.png">
+                        <p>刑事申诉</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c3.png">
+                        <p>刑事风险防范</p>
+                    </li>
+                    <li onclick="DGGkefu.open()">
+                        <img src="./img/c9.png">
+                        <p>私人刑事法律顾问</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 成功案例 -->
+
+        <div class="lawyer-team mekk">
+            <div class="child-title mt20">
+                <span>成功案例 ▪ 实力可见</span>
+            </div>
+            <div class="lawyer-team-body">
+                <div class="swiper-content">
+                    <div id="owl-demo2" class="owl-carousel">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/李某职务侵占取保候审.pdf" target="_blank">
+                                        <img src="img/w1.jpg"  />
+                                        <p><span class="strong">李某职务侵占案取保候审</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/钟某组织卖淫案取保候审.pdf" target="_blank">
+                                        <img src="img/w2.jpg"  />
+                                        <p><span class="strong">钟某组织卖淫案取保候审</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/某梅组织卖淫无罪释放.pdf" target="_blank">
+                                        <img src="img/w3.jpg"  />
+                                        <p><span class="strong">某梅组织卖淫案无罪释放</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/李某职务侵占无罪释放.pdf" target="_blank">
+                                        <img src="img/w4.jpg"  />
+                                        <p><span class="strong">李某职务侵占无罪释放</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/龙某聚众斗殴获取保候审.pdf" target="_blank">
+                                        <img src="img/w5.jpg"  />
+                                        <p><span class="strong">龙某聚众斗殴获取保候审</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/林某聚众斗殴取保候审.pdf" target="_blank">
+                                        <img src="img/w6.jpg"/>
+                                        <p><span class="strong">林某聚众斗殴案取保候审</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/熊某强奸案获缓刑.pdf" target="_blank">
+                                        <img src="img/w7.jpg"/>
+                                        <p><span class="strong">熊某强奸案成功获取缓刑</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/马某盗窃罪免予处罚.pdf" target="_blank">
+                                        <img src="img/w8.jpg"/>
+                                        <p><span class="strong">马某盗窃案免予刑事处罚</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <a href="pdf/苏某危险驾驶获缓刑.pdf" target="_blank">
+                                        <img src="img/w9.jpg"/>
+                                        <p><span class="strong">苏某危险驾驶案取保候审</span></p>
+                                    </a>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var owl = $('#owl-demo2');
+                    owl.owlCarousel({
+                        items: 2,
+                        loop: true,
+                        singleItem : false,
+                        margin:10,
+                        scrollPerPage: true,
+                        pagination: true,
+                        autoplay: true,
+                        navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                        autoplayTimeout: 3000,
+                        animateOut: 'fadeOut',
+                        autoplayHoverPause: true
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="guangao">
+            <h2>
+                更多刑事成功案例<br>
+                <a href="#">立即查看</a>
+            </h2>
+            <img src="./img/img2.jpg" class="other-img">
+        </div>
+
+        <div class="service-field">
+            <div class="child-title mt20">
+                某某律师精英团队
+            <p><span class="eerr">专业</span><span class="eerr">高效</span><span class="eerr">诚信</span><span class="eerr">品质</span></p>
+            </div>
+            <div class="fuwu_liebiao zuiming">
+                <div class="fuwu_area">
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/yhm.jpg"/>
+                                    <p><span class="strong">某某</span>首席律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/lls.jpg"  />
+                                    <p><span class="strong">吴某某</span>律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fuwu_area">
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/sll.jpg"  />
+                                    <p><span class="strong">吴某某</span>律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/liaols.jpg"  />
+                                    <p><span class="strong">吴某某</span>律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fuwu_area">
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/linls.jpg"  />
+                                    <p><span class="strong">吴某某</span>律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="service_lists">
+                        <div class="item">
+                            <label for="radio">
+                                <div class="lawyer-team-pic">
+                                    <img src="img/zls.jpg"  />
+                                    <p><span class="strong">吴某某</span>律师</p>
+                                </div>
+                                <div class="lawyer-team-text">
+                                    <div class="renwu_zix"><i class="fa fa-comments-o"></i> 咨询</div>
+                                    <div class="renwu_zix"><i class="fa fa-phone"></i> 致电</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 垂直轮播 -->
+        <div class="vertical_lunbo cz_slider">
+            <div id="new_messages">
+              <ul>
+                <li>
+                    <a>
+                        <span class="last1">1分钟前</span>
+                        <span class="last2">135****3441</span>
+                        <span class="last3">李女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">3分钟前</span>
+                        <span class="last2">137****2742</span>
+                        <span class="last3">王女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">10分钟前</span>
+                        <span class="last2">137****9042</span>
+                        <span class="last3">刘先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">6分钟前</span>
+                        <span class="last2">155****3296</span>
+                        <span class="last3">胡女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">17分钟前</span>
+                        <span class="last2">186****2340</span>
+                        <span class="last3">付先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">19分钟前</span>
+                        <span class="last2">188****0791</span>
+                        <span class="last3">王女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">23分钟前</span>
+                        <span class="last2">139****7934</span>
+                        <span class="last3">张女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">18分钟前</span>
+                        <span class="last2">138****2901</span>
+                        <span class="last3">杜先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">29分钟前</span>
+                        <span class="last2">188****1741</span>
+                        <span class="last3">廖女士已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">34分钟前</span>
+                        <span class="last2">186****0558</span>
+                        <span class="last3">刘先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">4分钟前</span>
+                        <span class="last2">180****2238</span>
+                        <span class="last3">何先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">40分钟前</span>
+                        <span class="last2">180****9258</span>
+                        <span class="last3">王先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">10分钟前</span>
+                        <span class="last2">180****9258</span>
+                        <span class="last3">王先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="last1">11分钟前</span>
+                        <span class="last2">189****0008</span>
+                        <span class="last3">李先生已获得</span>
+                        <span class="last4">免费1对1刑事咨询</span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <script>
+            $(function() {
+              $('#new_messages').vTicker({
+                speed: 700,
+                pause: 3000,
+                showItems: 3,
+                mousePause: true,
+                height: 0,
+                direction: 'up',
+                animation: 'fade',
+                mousePause: true
+            });
+            });
+        </script>
+
+        <div class="other">
+            <div class="child-title mt20">
+                常见问题
+            </div>
+            <div class="other-body">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseOne">
+                                    <span>家人被抓后怎么办？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseTwo">
+                                    <span>请一个律师要花多少钱？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseThree">
+                                    <span>危险驾驶被抓能不能取保候审？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseFour">
+                                    <span>一般刑事拘留是多长时间？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseFive">
+                                    <span>律师会见犯罪嫌疑人有次数限制吗？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" 
+                                   href="#collapseSix">
+                                    <span>私人放高利贷是否违法，会涉及什么罪名？</span><i class="fa fa-search"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                这个请联系我们的在线律师
+                                <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        更多刑事类咨询和法律问题，请咨询在线律师
+                        <a href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">咨询答案</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="other zaixianliuyan">
+            <div class="child-title mt20">
+                在线留言
+            </div>
+            <div class="law-form" style="margin-top: 0px;">
+                <form method="post" action="form_contact.php">
+                    <input type="text" name="name" placeholder="姓名" required>
+                    <input type="tel" name="shouji" placeholder="手机号码" required>
+                    <div>
+                    <textarea placeholder="咨询详情" name="messages" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">提交</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="other aboutus">
+            <div class="child-title mt20">
+                关于我们
+            </div>
+            <div class="quantu">
+                <img src="img/a3.jpg">
+            </div>
+            <div class="ablists">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d1.jpg">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d2.jpg">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d3.jpg">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d4.jpg">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d5.jpg">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="img/d6.jpg">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="footer">
+            <span class="footer-title">紧急的事情不能等</span>
+            <p class="footer-tel">立即咨询专业律师：<a href="tel:4008-158-168" class="red">4008-158-168</a> </p>
+        </div>
+
+    </div>
+    <nav class="mui-bar mui-bar-tab full-footer">
+        <a class="mui-tab-item" href="http://p.qiao.baidu.com/cps2/chatIndex?reqParam=%7B&qq-pf-to=pcqq.c2c" onclick="DGGkefu.open()">
+            <i><img src="./img/icon-massage.png"></i>
+            <span class="mui-tab-label">在线咨询</span>
+        </a>
+        <a class="mui-tab-item" href="tel:4008-158-168">
+            <i><img src="./img/icon-phone.png"></i>
+            <span class="mui-tab-label">免费电话</span>
+        </a>
+    </nav>
+    <!-- <script src="./js/mui.min.js"></script> -->
+    <script>
+        jQuery(function($){
+            jQuery(".expert").each(function(){
+                var maxwidth=36;
+                if(jQuery(this).text().length>maxwidth){
+                    jQuery(this).text(jQuery(this).text().substring(0,maxwidth));
+                    jQuery(this).html(jQuery(this).html()+'…');
+                }
+            });
+        });
+
+        if(jQuery(".mui-content").width() < 640){
+            jQuery(function($){
+                jQuery(".panel-title a span").each(function(){
+                    var maxwidth=20;
+                    if(jQuery(this).text().length>maxwidth){
+                        jQuery(this).text(jQuery(this).text().substring(0,maxwidth));
+                        jQuery(this).html(jQuery(this).html()+'…');
+                    }
+                });
+                jQuery(".expert").each(function(){
+                    var maxwidth=13;
+                    if(jQuery(this).text().length>maxwidth){
+                        jQuery(this).text(jQuery(this).text().substring(0,maxwidth));
+                        jQuery(this).html(jQuery(this).html()+'…');
+                    }
+                });
+            });
+        };
+        if(jQuery(".mui-content").width() < 340){
+            jQuery(function($){
+                jQuery(".cz_slider ul li a .last4").each(function(){
+                    var maxwidth=4;
+                    if(jQuery(this).text().length>maxwidth){
+                        jQuery(this).text(jQuery(this).text().substring(0,maxwidth));
+                        jQuery(this).html(jQuery(this).html()+'…');
+                    }
+                });
+            });
+        }
+    </script>
+
+    
+    <script>
+      function fuckyou(){
+         window.close();
+         window.location="about:blank";
+    }
+      function ck() {
+        console.profile();
+        console.profileEnd();
+        if(console.clear) { console.clear() };
+                            if (typeof console.profiles =="object"){
+        return console.profiles.length > 0;
+                            }
+    }
+    function hehe(){
+    if( (window.console && (console.firebug || console.table && /firebug/i.test(console.table()) )) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)){
+      fuckyou();
+    }
+    if(typeof console.profiles =="object"&&console.profiles.length > 0){
+    fuckyou();
+    }
+    }
+    hehe();
+    window.onresize = function(){
+    if((window.outerHeight-window.innerHeight)>100)
+       fuckyou();
+    }
+    </script>
+    <script>
+        document.onkeydown=function (e){
+            var currKey=0,evt=e||window.event;
+            currKey=evt.keyCode||evt.which||evt.charCode;
+            if (currKey == 123) {
+                window.event.cancelBubble = true;
+                window.event.returnValue = false;
+            }
+        }
+    </script>
+    <script type="text/Javascript">
+    document.oncontextmenu=function(e){return false;};
+    document.onselectstart=function(e){return false;};
+    </script>
+    <style>
+    body{
+    -moz-user-select:none;
+    }
+    </style>
+    <SCRIPT LANGUAGE=javascript>
+    if (top.location != self.location)top.location=self.location;
+    </SCRIPT>
+    <noscript><iframe src=*.html></iframe></noscript>
+    
+
+</body>
+</html>
